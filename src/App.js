@@ -1,7 +1,7 @@
 import React from 'react';
 import Signup from './pages/Signup.tsx';
 import Home from './pages/Home.tsx';
-import ReactDOM from "react-dom/client";
+// import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './pages/Login.tsx';
 const App = () => {
@@ -12,6 +12,9 @@ const App = () => {
           <Route path="/signup" element={<Signup />} />
           <Route path="/home" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          {/* <Route path="/requests" element={<} />
+          <Route path="/suggestions" element={<Login />} />
+          <Route path="/recommendations" element={<Login />} /> */}
       </Routes>
     </Router>
   );
