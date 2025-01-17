@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Signup.css';
-import { signupUser } from '../api/signup';  
+import { signupUser } from '../api/signup.js';  
 import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
@@ -16,7 +16,6 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check if passwords match
     if (password !== confirmPassword) {
       setErrorMessage('Passwords do not match');
       return;

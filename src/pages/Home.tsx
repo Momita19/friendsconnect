@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar.tsx';
 import SuggestedFriends from '../components/SuggestedFriends.tsx';
 import './Home.css'
 import UserProfiles from '../components/UserProfile.tsx';
+import SearchInput from '../components/Search.tsx';
 // import MainContent from '../components/MainContent';
 
 const Home = () => {
@@ -15,8 +16,10 @@ const Home = () => {
         
           {/* <Header/> */}
           <div className='main-content'>
+            {/* <SearchInput/> */}
+            <UserProfiles/>
           <SuggestedFriends/>
-          <UserProfiles/>
+          
           </div>
         {/* <MainContent /> */}
       </div>

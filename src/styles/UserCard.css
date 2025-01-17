@@ -4,16 +4,18 @@
     border-radius: 4px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* display: flex; */
   }
   
   .user-card img {
-    width: 100%;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
   }
   
   .user-card button {
-    background-color: #007bff;
+    background-color: #935ba3;
     color: white;
     padding: 5px 10px;
     border: none;
@@ -22,6 +24,12 @@
   }
   
   .user-card button:hover {
-    background-color: #0056b3;
+    background-color: #c555a7;
+  }
+  .user-info{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 38px;
   }
   

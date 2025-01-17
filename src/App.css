@@ -1,10 +1,23 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  color: #4b74c3d6;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: #aa547c;
+}
+
+a {
+  color: #4b74c3d6; /* Same as the global color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #3a5d9b; /* Darker blue for hover effect */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,12 +27,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,11 +39,3 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

@@ -1,33 +1,48 @@
-/* styles.css */
+
 .home-container {
     display: flex;
-    flex-direction: column;
-    height: 100vh;
+    flex-direction: column; /* Ensures the header and content are stacked vertically */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevents unwanted scrolling issues */
   }
   
   .home-content {
     display: flex;
     flex: 1;
     position: relative;
+    overflow-y: auto;
   }
   
   .sidebar {
-    width: 300px; /* Fixed width for sidebar */
-    position: fixed; /* Overlay beside the body */
-    top: 60px; /* Assuming Header height is 60px */
+    width: 21%;
+    position: fixed;
+    top: 47px;
     left: 0;
     bottom: 0;
-    background-color: #f4f4f4; /* Sidebar background */
-    padding: 16px;
-    overflow-y: auto; /* Enable scrolling for long content */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    padding: 24px;
+    overflow-y: auto;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1)
   }
   
   .main-content {
-    margin-left: 300px; /* Space for the sidebar */
+    margin-left: 300px;
     flex: 1;
-    padding: 20px;
+    padding: 0px 20px;
     overflow-y: auto;
-    background-color: #fff; /* Main content background */
+    background-color: #fff;
+    position: sticky;
+    
+  }
+
+header {
+    position: sticky; /* Make the header sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 1000; /* Ensure it stays above other elements */
+    background-color: white; /* Match the header's background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for a floating effect */
+  }
+  .suggested-friends {
+    margin-top: 20px; /* Add spacing between sections */
   }
   
